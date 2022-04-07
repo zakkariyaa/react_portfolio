@@ -1,0 +1,92 @@
+.contact__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    border-radius: 1rem;
+}
+
+
+/* ================ ASIDE SECTION ================ */
+.contact__aside {
+    background: var(--color-bg-variant);
+    padding: 3rem;
+    border-radius: 1rem;
+}
+
+.contact__aside h2 {
+    text-align: left;
+    margin-bottom: 0.7rem;
+}
+
+.contact__aside p {
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+.contact__details li {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.contact__socials {
+    color: var(--color-primary);
+}
+
+
+/* ================ FORM SECTION ================ */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-right: 4rem;
+    margin-top: 1rem;
+}
+
+.contact__form-inputs > * {
+    padding: 1rem;
+    background: var(--color-bg);
+    color: var(--color-white);
+    border: 1px solid var(--color-light);
+}
+
+.contact__form-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+form .buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+form .buttons button + button {
+    background: var(--color-bg);
+}
+
+/* ================ MEDIA QUERIES  ================== */
+/* ================ TABLETS ================== */
+
+@media screen and (max-width: 1024px) {
+    .contact__container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    form {
+        width: 100%;
+    }
+}
+
+/* ================ MOBILE PHONES ================== */
+@media screen and (max-width: 600px) {
+    .contact__container {
+        gap: 0.8rem;
+    }
+
+    .contact__aside {
+        padding: 1.2rem;
+    }
+}
